@@ -92,14 +92,14 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: / || home
-  about: /about/ || user
-  tags: /tags/ || tags
-  categories: /categories/ || th
-  archives: /archives/ || archive
+  home: / 
+  # tags: /tags/ || tags
+  categories: /categories
+  archives: /archives
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  commonweal: /404/ || heartbeat
+  about: /about
+  commonweal: /404.html
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -230,8 +230,8 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   totalcount: false
   separated_meta: true
 
@@ -692,7 +692,7 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-center-simple
 
 # Canvas-nest
 canvas_nest: true
@@ -811,3 +811,6 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+passage_end_tag:
+  enabled: true

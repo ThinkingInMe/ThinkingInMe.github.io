@@ -74,6 +74,10 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+live2d:
+  model: wanko
+  bottom: -30
+  mobileShow: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

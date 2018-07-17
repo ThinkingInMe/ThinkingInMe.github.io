@@ -85,3 +85,5 @@ deploy:
   type: git
   repository: git@github.com:ThinkingInMe/thinkinginme.github.io.git
   branch: master
+
+psot_asset_folder: true

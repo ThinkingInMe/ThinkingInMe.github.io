@@ -1,4 +1,9 @@
-# Java中RPC和RMI的区别浅析
+---
+title: Java中RPC和RMI的区别浅析
+date: 2018-06-02 21:12:41
+categories: '分布式' 
+---
+# Java中RPC和RMI的区别
 
 > RPC： 远程过程调用协议（Remote Proceduce Call Port），通过网络从远程计算机上请求调用服务。
 
@@ -9,7 +14,7 @@
 
 > RMI：远程方法调用协议（Remote Method Invocation），能在客户端Java虚拟机上调用其他Java虚拟机的方法。
 
-![1527943055800](C:\Users\DEAR\AppData\Local\Temp\1527943055800.png)
+<!-- more -->
 
 * 客户端代理对象调用服务端代理对象
 

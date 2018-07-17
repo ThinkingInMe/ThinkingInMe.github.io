@@ -7,7 +7,7 @@ categories: zookeeper
 
 ---
 
-#### 处理步骤
+### 处理步骤
 
 1. 将事务日志保存到本地
 2. 广播事务请求给所有follower节点

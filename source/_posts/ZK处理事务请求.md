@@ -17,7 +17,7 @@ categories: zookeeper
 
 <!-- more -->
 
-![](image/464291-20170707145934487-792374654.png)
+![](464291-20170707145934487-792374654.png)
 
 ```properties
 所有非Leader的服务器收到来自客户端的事务请求，都会已Request的方式转发到Leader服务器处理

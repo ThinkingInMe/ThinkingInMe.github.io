@@ -37,7 +37,7 @@ categories: 大数据
   * 分块写入DataNode节点，DataNode自动完成副本备份
   * DataNode向NameNode汇报存储完成，NameNode通知客户端
 
-  ![](hadoop入门/TIM截图20180721114410.png)
+  ![](TIM截图20180721114410.png)
 
 * HDFS读流程
 
@@ -47,7 +47,7 @@ categories: 大数据
 
   * 客户从DataNode分块下载文件
 
-    ![](hadoop入门/TIM截图20180721114616.png)
+    ![](TIM截图20180721114616.png)
 
 ###Hadoop核心之MapReduce
 

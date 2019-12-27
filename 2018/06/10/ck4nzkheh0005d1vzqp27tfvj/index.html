@@ -93,16 +93,19 @@
 
 
 
-<meta name="description" content="On The Way Of Truth">
-<meta property="og:type" content="website">
-<meta property="og:title" content="行走在路上">
-<meta property="og:url" content="https://thinkinginme.github.io/categories/分布式/index.html">
+<meta name="description" content="处理步骤 将事务日志保存到本地 广播事务请求给所有follower节点 follwoer节点处理完以后会给一个ack leader根据接受到的ack进行判断是否大于half，如果是，则发起commit请求并广播 leaderj将数据同步给observer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ZK处理事务请求">
+<meta property="og:url" content="https://thinkinginme.github.io/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/index.html">
 <meta property="og:site_name" content="行走在路上">
-<meta property="og:description" content="On The Way Of Truth">
+<meta property="og:description" content="处理步骤 将事务日志保存到本地 广播事务请求给所有follower节点 follwoer节点处理完以后会给一个ack leader根据接受到的ack进行判断是否大于half，如果是，则发起commit请求并广播 leaderj将数据同步给observer">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://thinkinginme.github.io/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/464291-20170707145934487-792374654.png">
+<meta property="og:updated_time" content="2019-12-18T11:04:32.861Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="行走在路上">
-<meta name="twitter:description" content="On The Way Of Truth">
+<meta name="twitter:title" content="ZK处理事务请求">
+<meta name="twitter:description" content="处理步骤 将事务日志保存到本地 广播事务请求给所有follower节点 follwoer节点处理完以后会给一个ack leader根据接受到的ack进行判断是否大于half，如果是，则发起commit请求并广播 leaderj将数据同步给observer">
+<meta name="twitter:image" content="https://thinkinginme.github.io/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/464291-20170707145934487-792374654.png">
 
 
 
@@ -132,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="https://thinkinginme.github.io/categories/分布式/"/>
+  <link rel="canonical" href="https://thinkinginme.github.io/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/"/>
 
 
 
 
 
-  <title>分类: 分布式 | 行走在路上</title>
+  <title>ZK处理事务请求 | 行走在路上</title>
   
 
 
@@ -156,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -260,83 +263,302 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>分布式<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://thinkinginme.github.io/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行走在路上">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/06/10/ck4nzkhel0009d1vz46oriow2/" itemprop="url">
-              
-                <span itemprop="name">nginx+tomcat集群</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">ZK处理事务请求</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-10T10:39:16+08:00"
-              content="2018-06-10" >
-          06-10
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-10T22:38:20+08:00">
+                2018-06-10
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/zookeeper/" itemprop="url" rel="index">
+                    <span itemprop="name">zookeeper</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/" class="leancloud_visitors" data-flag-title="ZK处理事务请求">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>  阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  255
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/06/02/ck4nzkhe60000d1vzhp2j8jr6/" itemprop="url">
-              
-                <span itemprop="name">Java中RPC和RMI的区别浅析</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-02T21:12:41+08:00"
-              content="2018-06-02" >
-          06-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
+        <h3 id="处理步骤"><a href="#处理步骤" class="headerlink" title="处理步骤"></a>处理步骤</h3><ol>
+<li>将事务日志保存到本地</li>
+<li>广播事务请求给所有follower节点</li>
+<li>follwoer节点处理完以后会给一个ack</li>
+<li>leader根据接受到的ack进行判断是否大于half，如果是，则发起commit请求并广播</li>
+<li>leaderj将数据同步给observer</li>
+</ol>
+<a id="more"></a>
+<p><img src="//thinkinginme.github.io/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/464291-20170707145934487-792374654.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">所有非Leader的服务器收到来自客户端的事务请求，都会已Request的方式转发到Leader服务器处理</span><br></pre></td></tr></table></figure>
+<h3 id="处理Proposal流程"><a href="#处理Proposal流程" class="headerlink" title="处理Proposal流程"></a>处理Proposal流程</h3><ul>
+<li>生成Proposal  zK将请求头、事务体、ZXID、请求本身序列化到Proposal对象</li>
+<li>广播提议</li>
+<li>广播接收端通过sync流程记录事务日志并返回ACK，如果半数获得通过，则进入commit环节</li>
+<li>向Flowwer、Observer广播COMMIT消息</li>
+</ul>
+<h3 id="处理Sync流程"><a href="#处理Sync流程" class="headerlink" title="处理Sync流程"></a>处理Sync流程</h3><ul>
+<li>针对每个时请求，都会通过事务日志的方式将其记录下来，记录完成后，向服务器发送ACK消息表明记录完成。</li>
+</ul>
+<h3 id="处理Commit流程"><a href="#处理Commit流程" class="headerlink" title="处理Commit流程"></a>处理Commit流程</h3><ul>
+<li>将事务从事务日志应用到内存数据库。</li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    <div>
+      
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/">ZK处理事务请求</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Mr.Li 的个人博客">Mr.Li</a></p>
+  <p><span>发布时间:</span>2018年06月10日 - 22:06</p>
+  <p><span>最后更新:</span>2019年12月18日 - 19:12</p>
+  <p><span>原始链接:</span><a href="/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/" title="ZK处理事务请求">https://thinkinginme.github.io/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://thinkinginme.github.io/2018/06/10/ck4nzkheh0005d1vzqp27tfvj/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/10/ck4nzkhel0009d1vz46oriow2/" rel="next" title="nginx+tomcat集群">
+                <i class="fa fa-chevron-left"></i> nginx+tomcat集群
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/21/ck4nzkhej0006d1vz8o4brlzn/" rel="prev" title="hadoop入门">
+                hadoop入门 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -344,6 +566,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -364,8 +593,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -429,6 +667,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#处理步骤"><span class="nav-number">1.</span> <span class="nav-text">处理步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#处理Proposal流程"><span class="nav-number">2.</span> <span class="nav-text">处理Proposal流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#处理Sync流程"><span class="nav-number">3.</span> <span class="nav-text">处理Sync流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#处理Commit流程"><span class="nav-number">4.</span> <span class="nav-text">处理Commit流程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -600,6 +854,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -799,6 +1057,23 @@
 
   
   
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: ,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
 
   
 
